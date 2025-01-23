@@ -21,7 +21,7 @@ public class App extends ListenerAdapter {
     }
 
     public static void main(String[] args) {
-        String token = "MTMzMTg5Njk4MjA4MzQ2OTM3Mw.G4uzxE.yS5IlVWdK5rv64ocFlrNAcG_2JBK-lqJ0cIc7g";
+        String token = System.getenv("DISCORD_BOT_TOKEN");
 
         EnumSet<GatewayIntent> intents = EnumSet.of(
                 GatewayIntent.GUILD_MESSAGES,
